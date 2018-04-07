@@ -1,0 +1,19 @@
+The data structure used is of a singly linked list for the sparse matrix. 
+I chose this data structure because at any given point the list may be 
+traversed and the elements at the required column and row may be returned 
+so that mathematical operations may be performed on them. This is good for 
+a sparse matrix because the 0’s of the sparse matrix are never saved into 
+the list and if you request a matrix location that is not in the list a 0 
+is returned so that the math can be performed to find the determinant. 
+This was a good implementation because the objects allow for many fields
+ such as row column and data. 
+
+Computational complexity:
+addElement O(n)
+reomoveElement O(n)
+getElement O(n)
+getSize O(1)
+setSize O(1)
+Clear O(1)
+addMatrices O(n)
+multiplyMatrices O(i*j*k)
